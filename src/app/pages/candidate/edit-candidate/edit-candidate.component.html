@@ -1,0 +1,70 @@
+
+<div>
+  <div class="p-fluid p-formgrid p-grid p-col-6 p-offset-3" [formGroup]="form">
+    <div class="p-field p-col-8 p-md-12">
+      <h2>Cadastro/Edição de candidato</h2>
+    </div>
+    <div class="p-field p-col-8 p-md-12">
+      <label for="nome_completo">Nome completo</label>
+      <input id="nome_completo" type="text" formControlName="full_name" pInputText>
+    </div>
+    <div class="p-field p-col-8 p-md-6">
+      <label for="primeiro_nome">Primeiro nome</label>
+      <input id="primeiro_nome" type="text" formControlName="first_name" pInputText>
+    </div>
+    <div class="p-field p-col-8 p-md-6">
+      <label for="segundo_nome">Ultimo nome</label>
+      <input id="segundo_nome" type="text" formControlName="last_name" pInputText>
+    </div>
+    <div class="p-field p-col-12 p-md-6">
+      <label for="email">Email</label>
+      <input id="email" type="text" formControlName="email" pInputText>
+    </div>
+    <div class="p-field p-col-12 p-md-6">
+      <label for="password">Senha</label>
+      <input id="password" type="password" formControlName="password" pInputText>
+    </div>
+    <div class="p-field p-col-12 p-md-4">
+      <label for="user">Usuário</label>
+      <input id="user" type="text" formControlName="username" pInputText>
+    </div>
+    <div style="margin-top: 28px;" class="p-field p-col-12 p-md-3">
+      <div class="p-field-checkbox">
+        <p-checkbox binary="true" formControlName="confirm_username" inputId="binary"></p-checkbox>
+        <label for="binary">Confirmar usuário</label>
+      </div>
+    </div>
+    <div style="margin-top: 28px;" class="p-field p-col-12 p-md-5">
+      <div class="p-field-checkbox">
+        <p-checkbox binary="true" formControlName="is_social" inputId="binary"></p-checkbox>
+        <label for="binary">É social</label>
+      </div>
+    </div>
+    <div class="p-field p-col-12 p-md-4">
+      <span>Telefone</span>
+      <p-inputMask mask="(99) 9999-9999" formControlName="phone" placeholder="(99) 9999-9999"></p-inputMask>
+    </div>
+    <div class="p-field p-col-12 p-md-4">
+      <span>CPF</span>
+      <p-inputMask mask="999.999.999-99" formControlName="cpf" placeholder="999.999.999-99"></p-inputMask>
+    </div>
+    <div class="p-field p-col-12 p-md-4">
+      <span>RG</span>
+      <p-inputMask mask="99.999.999-99" formControlName="rg" placeholder="99.999.999-99"></p-inputMask>
+    </div>
+    <div class="p-field p-col-12 p-md-4">
+      <label for="birth">Data de nascimento</label>
+      <p-calendar inputId="birth" formControlName="birth_date"></p-calendar>
+    </div>
+    <div class="p-field p-col-8 p-md-4">
+      <label for="lattes">Lattes</label>
+      <input id="lattes" type="text" formControlName="lattes" pInputText>
+    </div>
+    <div style="margin-top: 28px;" class="p-field p-col-12 p-md-2">
+      <button pButton pRipple type="button" (click)="cancel()" label="Cancelar" class="p-button-danger"></button>
+    </div>
+    <div style="margin-top: 28px;" class="p-field p-col-12 p-md-2">
+      <button pButton pRipple type="button" (click)="save()" label="Salvar" class="p-button-success"></button>
+    </div>
+  </div>
+</div>

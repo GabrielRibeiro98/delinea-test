@@ -1,0 +1,11 @@
+.container-login {
+  width: 100vw;
+  height: 100vh;
+}
+
+.card-login {
+  width: 20rem;
+  height: 18rem;
+  background: #f7f7f7;
+  border-radius: 25px;
+}

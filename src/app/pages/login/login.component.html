@@ -1,0 +1,16 @@
+<div class="container-login p-d-flex p-jc-center p-ai-center">
+  <div class="card-login p-d-flex p-ai-center p-jc-around p-flex-column" [formGroup]="form">
+    <h2>
+      Login
+    </h2>
+    <div>
+      <input type="text" pInputText [(ngModel)]="username" placeholder="Username"/>
+    </div>
+    <div>
+      <input type="text" pInputText [(ngModel)]="password" placeholder="Password"/>
+    </div>
+    <div>
+      <button pButton type="button" label="Fazer login"></button>
+    </div>
+  </div>
+</div>
